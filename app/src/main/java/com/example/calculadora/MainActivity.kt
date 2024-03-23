@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         val botonDividir= findViewById<Button>(R.id.botonDividir)
         val botonResiduo= findViewById<Button>(R.id.botonResiduo)
 
-        var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
-        var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
 
         botonSuma.setOnClickListener {
+            var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
+            var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
             var resultado=numero1+numero2
             textoResultado.text= resultado.toString()
             val toast= Toast.makeText(this,resultado.toString(),Toast.LENGTH_LONG)
@@ -33,18 +33,26 @@ class MainActivity : AppCompatActivity() {
         }
 
         botonResta.setOnClickListener {
+            var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
+            var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
             textoResultado.text= (numero1-numero2).toString()
         }
 
         botonMultiplica.setOnClickListener {
+            var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
+            var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
             textoResultado.text= (numero1*numero2).toString()
         }
 
         botonDividir.setOnClickListener {
+            var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
+            var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
             textoResultado.text= (numero1/numero2).toString()
         }
 
         botonResiduo.setOnClickListener {
+            var numero1:  Double= findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
+            var numero2:  Double= findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDouble()
             textoResultado.text= (numero1%numero2).toString()
         }
 
